@@ -1,181 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CP Dashboard Portfolio</title>
-<style>
-body {
-  margin: 0;
-  background: #0d1117;
-  color: #00ff9c;
-  font-family: "Courier New", monospace;
-}
-
-.container {
-  padding: 20px;
-}
-
-.navbar {
-  position: sticky;
-  top: 0;
-  background: #010409;
-  padding: 10px;
-  border-bottom: 1px solid #00ff9c;
-}
-
-.navbar a {
-  color: #00ff9c;
-  margin-right: 20px;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  text-shadow: 0 0 10px #00ff9c;
-}
-
-.section {
-  margin-top: 50px;
-}
-
-.terminal {
-  background: #010409;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #00ff9c;
-}
-
-.blink {
-  animation: blink 1s infinite;
-}
-
-@keyframes blink {
-  50% { opacity: 0; }
-}
-
-.skill-bar {
-  background: #222;
-  border-radius: 5px;
-  overflow: hidden;
-  margin: 10px 0;
-}
-
-.skill-fill {
-  height: 10px;
-  background: #00ff9c;
-}
-
-.card {
-  border: 1px solid #00ff9c;
-  padding: 15px;
-  margin-top: 10px;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  box-shadow: 0 0 15px #00ff9c;
-}
-
-input, textarea {
-  width: 100%;
-  background: black;
-  color: #00ff9c;
-  border: 1px solid #00ff9c;
-  padding: 8px;
-  margin-top: 5px;
-}
-
-button {
-  margin-top: 10px;
-  background: black;
-  color: #00ff9c;
-  border: 1px solid #00ff9c;
-  padding: 10px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #00ff9c;
-  color: black;
-}
-#about{
-color: #00ff9c;
-background: black;
-}
-html {
-  scroll-behavior: smooth;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="navbar">
-  > <a href="#home">home</a>
-  > <a href="#about">about</a>
-  > <a href="#projects">projects</a>
-  > <a href="#contact">contact</a>
-</div>
+    
+    <nav>
+        <h2>MyPortfolio</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<div class="container">
+   
+    <section id="home">
+        <h1>Hi, I'm Dhanya 👋</h1>
+        <p>Aspiring real world problem solver</p>
+    </section>
 
-<div id="home" class="section terminal">
-  <p>> whoami</p>
-  <h2>Dhanya Krishna</h2>
-  <p>Competitive Programmer</p>
-  <p>> status</p>
-  <p>Solving problems... <span class="blink">|</span>
-<p>I am passionate about <b>competitive programming</b>, problem solving, and building efficient algorithms.
-  I enjoy tackling challenging problems on platforms like AtCoder and Codeforces, and continuously improving my logical thinking skills.
-</p>
-</div>
- <p>
-<div id="about" class="section terminal">
-  <p class="education"> Education</p>
-  <p class="'education">B.Tech Student (Amrita Vishwa Vidyapeetham)</p>
-<p>Course pursuing:Computer Science and Engineering</p>
-</div>
-  <p class="section terminal"> interests</p>
-  <p>- Algorithms & Data Structures</p>
-  <p>- Competitive Programming</p>
-  <p>- Web Development</p>
-<div id="about" class="section terminal">
-  
-  <p>> skills</p>
-  HTML
-  <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
-  CSS
-  <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
-  Python
-  <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
-</div>
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Computer Science student passionate about coding and problem solving.</p>
+        <ul>
+            <li>HTML, CSS</li>
+            <li>Python</li>
+            <li>Data Structures</li>
+        </ul>
+    </section>
 
-<div id="projects" class="section terminal">
-  <p>> problem_archive</p>
+   
+    <section id="projects">
+        <h2>My Projects</h2>
 
-  <div class="card">
-    <p>Problem A: Portfolio Website</p>
-    <p>Status: Solved ✅</p>
-  </div>
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Short description of your project.</p>
+            <a href="#">View Project</a>
+        </div>
 
-  <div class="card">
-    <p>Problem B: Grid Solver</p>
-    <p>Status: Solved ✅</p>
-  </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Short description of your project.</p>
+            <a href="#">View Project</a>
+        </div>
 
-</div>
+    </section>
 
-<div id="contact" class="section terminal">
-  <p>> send_message</p>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: dhanyaklg@gmail.com</p>
+        <p>GitHub: <a href='https://github.com/Dhanya-Krishna'>Dhanya-Krishna</a></p>
+    </section>
 
-  <label>Name:</label>
-  <input type="text">
+    
+    <footer>
+        <p>© 2026 Dhanya</p>
+    </footer>
 
-  <label>Message:</label>
-  <textarea></textarea>
-
-  <button>EXECUTE</button>
-</div>
+</body>
+</html>
 
 </div>
 
