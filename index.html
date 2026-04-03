@@ -1,79 +1,84 @@
+
+        
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CP Dashboard Portfolio</title>
+
 </head>
 <body>
 
-    
-    <nav>
-        <h2>MyPortfolio</h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<div class="navbar">
+  > <a href="#home">home</a>
+  > <a href="#about">about</a>
+  > <a href="#projects">projects</a>
+  > <a href="#contact">contact</a>
+</div>
 
-   
-    <section id="home">
-        <h1>Hi, I'm Dhanya 👋</h1>
-        <p>Aspiring real world problem solver</p>
-    </section>
+<div class="container">
 
-    <!-- About -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Computer Science student passionate about coding and problem solving.</p>
-    
-    
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML, CSS</li>
-            <li>Python</li>
-            <li>Data Structures</li>
-        </ul>
- </section>
+<div id="home" class="section terminal">
+  <p>> whoami</p>
+  <h2>Dhanya Krishna</h2>
+  <p>Competitive Programmer</p>
+  <p>> status</p>
+  <p>Solving problems... <span class="blink">|</span>
+<p>I am passionate about <b>competitive programming</b>, problem solving, and building efficient algorithms.
+  I enjoy tackling challenging problems on platforms like AtCoder and Codeforces, and continuously improving my logical thinking skills.
+</p>
+</div>
+ <p>
+<div id="about" class="section terminal">
+  <p class="education"> Education</p>
+  <p class="'education">B.Tech Student (Amrita Vishwa Vidyapeetham)</p>
+<p>Course pursuing:Computer Science and Engineering</p>
+</div>
+  <p class="section terminal"> interests</p>
+  <p>- Algorithms & Data Structures</p>
+  <p>- Competitive Programming</p>
+  <p>- Web Development</p>
+<div id="about" class="section terminal">
+  
+  <p>> skills</p>
+  HTML
+  <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+  CSS
+  <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+  Python
+  <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+</div>
 
-   
-    <section id="projects">
-        <h2>My Projects</h2>
+<div id="projects" class="section terminal">
+  <p>> problem_archive</p>
 
-        <div class="project-card">
-            <h3>Project 1</h3>
-            <p>This website :):):)</p>
-            <a href="#">View Project</a>
-        </div>
+  <div class="card">
+    <p>Problem A: Portfolio Website</p>
+    <p>Status: Solved ✅</p>
+  </div>
 
-        <div class="project-card">
-            <h3>Project 2</h3>
-            <p>This is my progress charts on the site Atcoder (CP)</p>
-            <a href="https://kenkoooo.com/atcoder/#/user/dhanya1411?userPageTab=Progress+Charts">View Project</a>
-        </div>
+  <div class="card">
+    <p>Problem B: Grid Solver</p>
+    <p>Status: Solved ✅</p>
+  </div>
 
-    </section>
+</div>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: dhanyaklg@gmail.com</p>
-        <p>GitHub: <a href='https://github.com/Dhanya-Krishna'>Dhanya-Krishna</a></p>
-        <p>Phone: +91 88918 XXXXX</p>
-    </section>
+<div id="contact" class="section terminal">
+  <p>> send_message</p>
 
-    
-    <footer>
-        <p>© 2026 Dhanya</p>
-    </footer>
+  <label>Name:</label>
+  <input type="text">
 
-</body>
-</html>
+  <label>Message:</label>
+  <textarea></textarea>
+
+  <button>EXECUTE</button>
+</div>
 
 </div>
 
 </body>
 </html>
-
