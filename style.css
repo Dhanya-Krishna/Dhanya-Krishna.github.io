@@ -1,78 +1,104 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+
+
+
+  body {
+  margin: 0;
+  background: #0d1117;
+  color: #00ff9c;
+  font-family: "Courier New", monospace;
 }
 
-/* Navbar */
-nav {
-    display: flex;
-    justify-content: space-between;
-    background: #333;
-    color: white;
-    padding: 15px 30px;
+.container {
+  padding: 20px;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #010409;
+  padding: 10px;
+  border-bottom: 1px solid #00ff9c;
 }
 
-nav ul li {
-    margin-left: 20px;
+.navbar a {
+  color: #00ff9c;
+  margin-right: 20px;
+  text-decoration: none;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
+.navbar a:hover {
+  text-shadow: 0 0 10px #00ff9c;
 }
 
-/* Sections */
-section {
-    padding: 60px 20px;
-    text-align: center;
+.section {
+  margin-top: 50px;
 }
 
-
-
-#home {
-    background: #f4f4f4;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.terminal {
+  background: #010409;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ff9c;
 }
 
-/* Projects */
-.project-card {
-    background: #eee;
-    margin: 20px auto;
-    padding: 20px;
-    width: 60%;
-    border-radius: 10px;
-    transition: 0.3s;
+.blink {
+  animation: blink 1s infinite;
 }
 
-.project-card:hover {
-    transform: scale(1.05);
+@keyframes blink {
+  50% { opacity: 0; }
 }
 
-/* Footer */
-footer {
-    background: #333;
-    color: white;
-    padding: 10px;
+.skill-bar {
+  background: #222;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px 0;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
+.skill-fill {
+  height: 10px;
+  background: #00ff9c;
+}
 
-    .project-card {
-        width: 90%;
-    }
+.card {
+  border: 1px solid #00ff9c;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px #00ff9c;
+}
+
+input, textarea {
+  width: 100%;
+  background: black;
+  color: #00ff9c;
+  border: 1px solid #00ff9c;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 10px;
+  background: black;
+  color: #00ff9c;
+  border: 1px solid #00ff9c;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00ff9c;
+  color: black;
+}
+#about{
+color: #00ff9c;
+background: black;
+}
+html {
+  scroll-behavior: smooth;
 }
